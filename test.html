@@ -1,8 +1,10 @@
 <script>
     const b = window;
-    function f(){
-        this.g = 'l';
+    class f extends Location {
+        constructor() {
+            this.cc = location.href
+        }
     }
     const c = new f();
-    c.g
+    console.log( c.href );
 </script>
