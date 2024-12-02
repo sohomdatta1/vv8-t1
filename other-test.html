@@ -1,0 +1,15 @@
+<body>
+    <div id="a"></div>
+    <div id="b"></div>
+</body>
+<script>
+    window.onload = () => {
+        if ( 'Android' in window ) {
+            document.querySelector( '#a' ).innerHTML = 'Android';
+        }
+
+        if ( 'webview' in window ) {
+            document.querySelector( '#b' ).innerHTML = 'webview';
+        }
+    }
+</script>
